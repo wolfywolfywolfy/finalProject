@@ -1,0 +1,102 @@
+/* Base Styles (Mobile First) */
+section {
+    position: relative; /* Context for absolute positioning */
+    margin: 20px; /* Smaller margin for mobile */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+picture {
+    position: relative; /* Context for overlay positioning */
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+.textChunkOverlay {
+    max-width: 80%;
+    position: absolute; /* Allows positioning over the image */
+    bottom: 10px; /* Positioning for mobile */
+    left: 10px;
+}
+
+/* Links inside the overlay */
+.textChunkOverlay a {
+    color: #f1f1f1; /* Link color inside the overlay */
+    text-decoration: underline;
+}
+
+.textChunk {
+    /*Positioning*/
+    position: relative; 
+    color: #ebebeb;
+    margin-left: 10px; 
+
+    /*text styling*/
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.791); 
+    font-weight: 500;
+    font-size: 18px; 
+
+    /*readability*/
+    line-height: 2.0; 
+    background: none; 
+}
+
+/* Medium Screen */
+@media screen and (min-width: 400px) {
+    /* gets padding */
+    section {
+        margin: 50px 0; 
+        padding: 20px;
+    }
+
+    /*Style text*/
+    .textChunkOverlay {
+        bottom: 20px; 
+        left: 20px;
+        padding: 10px;
+    }
+    
+}
+
+.textChunk a {
+    color: #ffffff;
+    font-family: cursive;
+}
+
+.textChunk a:hover {
+    color: #e2e2e2;
+    text-shadow: -4px 3px 0px #ffffff38,
+                 3px 2px 0px #6973d175,
+                 -3px -3px 0px #2719ecb5;
+}
+
+@media screen and (min-width: 600px) {
+    .textChunkOverlay {
+        max-width: 50%;
+    }
+    .textChunk {
+        font-size: 14px;
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .textChunkOverlay {
+        max-width: 40%;
+    }
+    .textChunk {
+        bottom: 80px; 
+        left: 20px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}

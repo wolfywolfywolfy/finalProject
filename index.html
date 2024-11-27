@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cristina Languages</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Pixely Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+
+    <body>
+        <!--canvas with stars-->
+        <div id="myBackground">
+            <canvas id="starryBackground"></canvas>
+        </div>
+
+        <!--nav bar info-->
+        <header>
+            <!--links to each page-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="japanese.html">Japanese</a></li>
+                    <li><a href="hungarian.html">Hungarian</a></li>
+                    <li><a href="German.html">German</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--content goes here-->
+        <main>
+            <section id="japaneseSection">
+                <!--Image Sizes-->
+                <picture>
+                    <!--Small Image-->
+                    <source srcset="images/frierenMobile.jpg" media="(max-width: 600px)">
+
+                    <!--Default-->
+                    <img src="images/frierenFull.jpg" alt="Image of Frieren in Water">
+                </picture>
+
+                <!--Text to be overlaid-->
+                <div class="textChunkOverlay">
+                    <div class="textChunk">
+                        <h2>Japanese</h2>
+                        <p>
+                            Japanese is an awesome language.
+                            It has 3 character systems: Hiragana,
+                            Katakana, and Kanji.
+                            There is also awesome cultural aspects
+                            such as Touhou, Yellow Magic Orchestra, 
+                            Anime, and more.
+                        </p>
+                        <a href="japanese.html">Visit Japanese Page</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hungarianSection">
+                <!--Image Sizes-->
+                <picture>
+                    <!--Small Image-->
+                    <source srcset="images/marsMobile.jpg" media="(max-width: 600px)">
+
+                    <!--Default-->
+                    <img src="images/mars.jpg" alt="Image of Mars">
+                </picture>
+
+                <!--Text to be overlaid-->
+                <div class="textChunkOverlay">
+                    <div class="textChunk">
+                        <h2>Hungarian</h2>
+                        <p>
+                            Hungarian is my favorite language.
+                            It is one of the most unique languages
+                            in the world. The words in this language
+                            can become very long -- it is known as an
+                            agglutinative language. It is marked as
+                            one of the hardest languages for most people
+                            to learn.
+                        </p>
+                        <a href="hungarian.html">Visit Hungarian Page</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="germanSection">
+                <!--Image Sizes-->
+                <picture>
+                    <!--Small Image-->
+                    <source srcset="images/kraftwerkMobile.jpg" media="(max-width: 600px)" >
+
+                    <!--Default-->
+                    <img src="images/kraftwerk.jpg" alt="Image of kraftwerk with instruments" >
+                </picture>
+                <!--Text to be overlaid-->
+                <div class="textChunkOverlay">
+                    <div class="textChunk">
+                        <h2>German</h2>
+                        <p>
+                            German is an amazing language. There are
+                            awesome cultural aspects -- the tech
+                            music is awesome. There are many countries
+                            that speak German as a national language.
+                            The first three I think of are Germany,
+                            Switzerland, and Austria.
+                        </p>
+                        <a href="German.html">Visit German Page</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--links to the other pages-->
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="japanese.html">日本語</a></li>
+                <li><a href="hungarian.html">Magyar</a></li>
+                <li><a href="German.html">Deutsch</a></li>
+            </ul>
+        </footer>
+
+        <!--Load in the Javascript!-->
+        <script src="script.js"></script>
+    </body>
+
+</html>
