@@ -1,15 +1,22 @@
-/* Base Styles (Mobile First) */
+
+/* mobile first decorations */
 section {
-    position: relative; /* Context for absolute positioning */
-    margin: 20px; /* Smaller margin for mobile */
+    /*set the position to relative, to make everything on it absolute.*/
+    position: relative; 
+    margin: 20px; 
     padding: 10px;
+
+    /*slightly transparent card*/
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    /*no difference on x, moved below 2 pixels, and blur radius of 4*/
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 picture {
-    position: relative; /* Context for overlay positioning */
+    /*relative, so that the text above it can be absolute*/
+    position: relative; 
+    /*take up full width of parent container */
     display: block;
 }
 
@@ -23,32 +30,34 @@ picture img {
 
 .textChunkOverlay {
     max-width: 80%;
-    position: absolute; /* Allows positioning over the image */
-    bottom: 10px; /* Positioning for mobile */
+    /*absolute so that it adapts to parent container*/
+    position: absolute; 
+    bottom: 10px; 
     left: 10px;
 }
 
-/* Links inside the overlay */
+/*the links*/
 .textChunkOverlay a {
-    color: #f1f1f1; /* Link color inside the overlay */
+    color: #f1f1f1; 
     text-decoration: underline;
 }
 
 .textChunk {
-    /*Positioning*/
+    /*position*/
     position: relative; 
-    color: #ebebeb;
     margin-left: 10px; 
 
     /*text styling*/
+    color: #ebebeb;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.791); 
     font-weight: 500;
-    font-size: 18px; 
+    font-size: 16px; 
 
     /*readability*/
     line-height: 2.0; 
     background: none; 
 }
+
 
 /* Medium Screen */
 @media screen and (min-width: 400px) {

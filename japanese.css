@@ -1,3 +1,132 @@
 section {
     background-color: rgba(255, 255, 255, 0.152);
 }
+
+h2, h3 {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #e2e0e0;
+}
+
+p {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #e9e9e9;
+}
+
+#marasy8Section {
+    background-color: rgba(255, 255, 255, 0.041);
+}
+#marasy8Audio {
+    border-radius: 25px; /* Round the corners of the audio player */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+}
+
+
+#frierenSection {
+    background-color: rgba(255, 255, 255, 0);
+}
+/* full width and vertical display*/
+#frierenMedia img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 8px;
+}
+
+#frierenInformation h2, #frierenInformation p{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+
+#touhouSection {
+    display: grid;
+    max-width: 1300px; 
+    flex-direction: column;
+    max-width: 100%;
+    /*margin all around*/
+    margin: 1rem; 
+    /*cutesy padding*/
+    padding: 1rem; 
+    /*vertical alignment*/
+    align-items: center; 
+
+    background-color: rgba(255, 255, 255, 0.041);
+    overflow: hidden;
+}
+
+#touhouInformation h2, #touhouInformation p {
+    text-align: center; 
+}
+
+#touhouInformation h2 {
+    font-size: 2.2rem; 
+    margin-bottom: 1rem; 
+}
+
+#touhouInformation p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+}
+
+#touhouMedia {
+    display: flex;
+    justify-content: center;
+    
+}
+#touhouMedia iFrame {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+    #frierenMedia img {
+        width: 75%; 
+        height: auto; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    #frierenInformation h2 {
+        font-size: 2.2rem; 
+        margin-bottom: 1rem; 
+    }
+
+    #frierenInformation h2, #frierenInformation p {
+        width: 65%;
+    }
+
+    #touhouSection {
+        display: grid;
+        /*two columns*/
+        grid-template-columns: 1fr 1fr; 
+        /*space between columns*/
+        gap: 4rem; 
+        max-width: 1300px; 
+        /*margin all around*/
+        margin: 5rem; 
+        /*cutesy padding*/
+        padding: 2rem; 
+        /*vertical alignment*/
+        align-items: center; 
+    
+        background-color: rgba(255, 255, 255, 0.041);
+    }
+
+    #touhouMedia {
+        display: flex;
+        justify-content: center;
+        width: 560px;
+    }
+
+    #marasy8Header {
+        font-size: 2.2rem; 
+    }
+    #marasy8Section {
+        margin: 4rem;
+    }
+}

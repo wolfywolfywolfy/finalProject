@@ -137,19 +137,6 @@ p {
         object-fit: cover; /* Ensures images fill their container consistently */
     }
 
-    /*#conjugationTables {
-        display: flex; 
-        flex-direction: row;
-        justify-content: center; 
-        gap: 4rem; 
-        margin-top: 1rem;
-        
-    }*/
-
-    /*#conjugationSection {
-        max-width: 1200px;
-    }*/
-
     
  }
 
